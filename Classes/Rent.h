@@ -15,7 +15,8 @@
             Item(name, model, manufacturer, date_of_creation), price_per_day(price_per_day), is_available_for_rent(is_available_for_rent) {}
             Rent(const Rent &obj);
             void show_info() const override;
-            double getPricePerDay();
-            bool is_rent_available();
+            double getPricePerDay() const;
+            bool is_rent_available() const;
+            double getPricePerDay() const;
     };
 #endif
