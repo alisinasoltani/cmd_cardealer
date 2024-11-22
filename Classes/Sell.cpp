@@ -12,7 +12,7 @@ double Sell::getPrice() {
     return this->price;
 }
 
-bool Sell::is_available() {
+bool Sell::is_available_sale() {
     return this->is_available_for_sale;
 }
 
