@@ -17,6 +17,5 @@
             void show_info() const override;
             double getPricePerDay() const;
             bool is_rent_available() const;
-            double getPricePerDay() const;
     };
 #endif
