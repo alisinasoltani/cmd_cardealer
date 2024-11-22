@@ -10,6 +10,7 @@
             std::time_t date_of_creation;
 
         public:
+            Item(): name(""), model(""), manufacturer(""), date_of_creation(std::chrono::system_clock::to_time_t(std::chrono::system_clock::now())) {}
             Item(std::string name, std::string model, std::string manufacturer, std::time_t date_of_creation): name(name), model(model), manufacturer(manufacturer), date_of_creation(date_of_creation) {}
             Item(const Item& item);
             std::string getName() const;
