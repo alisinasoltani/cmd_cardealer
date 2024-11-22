@@ -1,2 +1,2 @@
 make:
-	g++ Item.cpp Sell.cpp Rent.cpp -o app.exe
+	g++ classes/Item.cpp classes/Sell.cpp classes/Rent.cpp main.cpp -o app.exe
