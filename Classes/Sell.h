@@ -11,8 +11,8 @@
         
         public:
             Sell(): Item("", "", "", std::chrono::system_clock::to_time_t(std::chrono::system_clock::now())) {}
-            Sell(std::string name, std::string model, std::string manufacturer, std::time_t dateOfCreation, double price, bool is_available_for_sale): 
-            Item(name, model, manufacturer, date_of_creation), price(price), is_available_for_sale(is_available_for_sale) {}
+            Sell(std::string name, std::string model, std::string manufacturer, double price, bool is_available_for_sale): 
+            Item(name, model, manufacturer,  std::chrono::system_clock::to_time_t(std::chrono::system_clock::now())), price(price), is_available_for_sale(is_available_for_sale) {}
             Sell(const Sell &obj);
             void show_info() const override;
             double getPrice();

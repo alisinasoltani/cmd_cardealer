@@ -11,7 +11,7 @@
         
         public:
             Rent(): Item("", "", "", std::chrono::system_clock::to_time_t(std::chrono::system_clock::now())) {}
-            Rent(std::string name, std::string model, std::string manufacturer, std::time_t dateOfCreation, double price_per_day, bool is_available_for_rent): 
+            Rent(std::string name, std::string model, std::string manufacturer, double price_per_day, bool is_available_for_rent): 
             Item(name, model, manufacturer, date_of_creation), price_per_day(price_per_day), is_available_for_rent(is_available_for_rent) {}
             Rent(const Rent &obj);
             void show_info() const override;
