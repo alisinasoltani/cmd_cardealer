@@ -3,7 +3,7 @@
 #ifndef __LINKEDLIST__
     #define __LINKEDLIST__
     struct Node {
-        Item *next;
+        Node *next;
         Item *data;
         Node() {
             next = nullptr;
@@ -16,9 +16,9 @@
             Node *head;
             
         public:
-            void appendNode(const Item &new_Item);
-            void deleteNode(const Item &new_Item);
+            void appendNode(Item *new_item);
+            void deleteNode(std::string name, std::string model);
             void printList();
-            Node *findNode(const Item &new_item);
+            Node *findNode(Item *new_item);
     };
 #endif
